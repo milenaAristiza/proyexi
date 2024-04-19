@@ -167,12 +167,14 @@ body {
   }
 
   .img__portada__fachadas {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     grid-row: 13 / 24;
+    display: flex;
+    justify-content: center;
   }
 
   .img__portada__fachadas>img {
-    height: 49vh;
+    height: 45vh;
   }
 
   .fondo_fachadas_mobile {
@@ -183,11 +185,12 @@ body {
     height: 100%;
     width: 100%;
     grid-column: 2 / 12;
-    grid-row: 16 / 32;
+    grid-row: 13 / 30;
   }
 
   .swiper-horizontal {
     grid-column: 1 / 13;
+    grid-row: 5 / 10;
     height: 30vh;
   }
 

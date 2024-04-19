@@ -162,15 +162,11 @@ h2 {
   }
 
   .button_portafolio button {
-    width: 25vw !important;
+    width: 35vw !important;
   }
 
   .flechaAbajo {
     width: 4vw !important;
-  }
-
-  .container_text_proyectos h2 {
-    font-size: 5vw;
   }
 
   .container_button_portafolio {
