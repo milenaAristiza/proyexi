@@ -1,0 +1,173 @@
+body {
+
+  z-index: 1000;
+  background-image: url(../img/fachadas/fondo3.jpeg);
+}
+
+.img__portada__fachadas>img {
+  height: 80vh;
+}
+
+.fachadas {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.section2 {
+  background-color: rgba(0, 0, 0, 0.66);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container__cont1__fachadas {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: end;
+  height: 100vh;
+}
+
+.cont1__fachadas {
+  display: flex;
+  width: 90vw;
+  height: 87vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************/
+
+.section_swiper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 70%;
+  height: 30vh;
+  margin: 20px auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*************************/
+.container__text__carrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  height: 87vh;
+}
+
+.cont1__text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #ffffff;
+  gap: 5vh;
+}
+
+.cont1__text>* {
+  margin: 0;
+}
+
+.cont1__text {
+  height: 40%;
+}
+
+.title1_services {
+  font-size: 2.5vw;
+  margin: 0;
+  color: #14aaea;
+}
+
+.remodelacion_comercial_mobile,
+.remodelacion_comercial_mobile2,
+.remodelacion_comercial_mobile3 {
+  display: none;
+}
+
+@media screen and (max-width:800px) {
+  .cont1__fachadas {
+    flex-direction: column;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .container__text__carrusel {
+    width: 100%;
+  }
+
+  .remodelacion_comercial_mobile,
+  .remodelacion_comercial_mobile2,
+  .remodelacion_comercial_mobile3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(34, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.66);
+  }
+
+  .fachadas {
+    display: none;
+  }
+
+  .cont1__text {
+    width: 90vw;
+    height: 70%;
+    gap: 2vh;
+    grid-column: 3 / 12;
+    grid-row: 5 / 28;
+}
+
+.cont1__text h3 , .cont1__text p {
+  font-size: 3vh;
+}
+
+  .title1_services {
+    font-size: 6vw;
+  }
+
+  .swiper-horizontal {
+    touch-action: pan-y;
+    grid-row: 26 / 32;
+    grid-column: 1/13;
+}
+
+.swiper-slide img {
+  width: 32vw;
+}
+  .img__portada__fachadas {
+    grid-column: 2 / 12;
+    grid-row: 8 / 14
+  }
+  
+}

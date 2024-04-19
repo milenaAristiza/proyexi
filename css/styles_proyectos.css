@@ -1,0 +1,184 @@
+.proyectos {
+  background-image: url(../img/fondo_pages.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.capa__azul {
+  background-color: rgba(18, 7, 44, 0.76);
+  width: 100vw;
+  height: 100vh;
+}
+
+.cont1 {
+  display: flex;
+  margin: 15vh;
+  gap: 7vw;
+}
+
+.cont1__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cont1__text h2 {
+  margin: 0;
+  font-size: 8vh;
+}
+
+.cont1__text p {
+  font-size: 3vh;
+}
+
+.cont1__text p,
+h2 {
+  color: #ffffff;
+}
+
+/******************/
+.swiper {
+  width: 100vw;
+  height: 60vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img_fondo_servicios {
+  background-image: url(../img/fondo_pages.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content_proyectos {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.container_text_proyectos {
+  color: #ffffff;
+  margin: 2vw;
+}
+
+.container_text_proyectos h2 {
+  font-size: 3vw;
+}
+
+.container_slider_proyectos {
+  width: 30vw;
+}
+
+.container_text_proyectos {
+  width: 50vw;
+}
+
+.container_slider_proyectos .swiper {
+  width: 25vw;
+}
+
+.button_portafolio button {
+  width: 12vw;
+  height: 7vh;
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 3vh;
+}
+
+.container_button_portafolio {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.proyectos_mobile {
+  display: none;
+}
+
+@media screen and (max-width:800px) {
+
+  .content_proyectos {
+    flex-direction: column;
+  }
+
+  .container_text_proyectos {
+    width: 90vw;
+    grid-column: 6 / 12;
+    grid-row: 10 / 28;
+  }
+
+  .container_text_proyectos h2 {
+    font-size: 5vh;
+  }
+
+  .container_text_proyectos p {
+    font-size: 3vh;
+  }
+
+  .container_slider_proyectos .swiper {
+    width: 80vw;
+  }
+
+  .container_slider_proyectos {
+    width: 100vw;
+    grid-column: 3 / 12;
+    grid-row: 8 / 25;
+  }
+
+  .proyectos_mobile {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(34, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.66);
+  }
+
+  .content_proyectos {
+    display: none;
+  }
+
+  .button_portafolio button {
+    width: 25vw !important;
+  }
+
+  .flechaAbajo {
+    width: 4vw !important;
+  }
+
+  .container_text_proyectos h2 {
+    font-size: 5vw;
+  }
+
+  .container_button_portafolio {
+    width: 90vw !important;
+  }
+
+  .img_fondo_mobile {
+    background-image: url(../img/fondo_pages2.jpg);
+    background-size: cover;
+  }
+}

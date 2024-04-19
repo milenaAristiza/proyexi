@@ -1,0 +1,209 @@
+body {
+
+  z-index: 1000;
+  background-image: url(../img/fachadas/img_principal.jpeg);
+  background-size: cover;
+
+}
+
+.img__portada__fachadas>img {
+  height: 80vh;
+}
+
+.fachadas {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.section2 {
+  background-color: rgba(0, 0, 0, 0.66);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container__cont1__fachadas {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: end;
+  height: 100vh;
+}
+
+.cont1__fachadas {
+  display: flex;
+  width: 90vw;
+  height: 87vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************/
+.section_swiper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 70%;
+  height: 65vh;
+  margin: 20px auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+/* Center slide text vertically */
+
+/*************************/
+.container__text__carrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 87vh;
+}
+
+.cont1__text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #ffffff;
+  gap: 4vh;
+}
+
+.cont1__text>* {
+  margin: 0;
+}
+
+.cont1__text {
+  height: 50%;
+}
+
+.title1_services {
+  font-size: 2.5vw;
+  margin: 0;
+  color: #14aaea;
+}
+
+.section1_mobile,
+.section2_mobile,
+.section3_mobile {
+  display: none;
+}
+
+@media screen and (max-width:800px) {
+  .cont1__fachadas {
+    flex-direction: column;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+
+  .container__text__carrusel {
+    width: 100%;
+  }
+
+  .fachadas,
+  .section2 {
+    display: none;
+  }
+
+  .section1_mobile,
+  .section2_mobile,
+  .section3_mobile {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(34, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.66);
+  }
+
+  .section3_mobile {
+    height: 50vh;
+  }
+
+  .img__portada__fachadas {
+    grid-column: 2 / 12;
+    grid-row: 13 / 24;
+  }
+
+  .img__portada__fachadas>img {
+    height: 49vh;
+  }
+
+  .fondo_fachadas_mobile {
+    background-image: url(../img/fachadas/img_principal.jpeg);
+  }
+
+  .cont1__text {
+    height: 100%;
+    width: 100%;
+    grid-column: 2 / 12;
+    grid-row: 16 / 32;
+  }
+
+  .swiper-horizontal {
+    grid-column: 1 / 13;
+    height: 30vh;
+  }
+
+  .swiper-slide-active {
+    width: 54vw !important;
+  }
+
+  .title1_services {
+    font-size: 7vw;
+  }
+
+  .button_portafolio button {
+    width: 30vw !important;
+  }
+
+  .swiper-pagination-fraction {
+    font-weight: 900;
+  }
+}
