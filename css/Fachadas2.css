@@ -144,6 +144,10 @@ header {
     #menu-bar:checked~.navbar {
       display: initial;
     }
+
+    header .navbar ul li a {
+      margin-bottom: 1vh;
+    }
   }
    /****media query****/
   
