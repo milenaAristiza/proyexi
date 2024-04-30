@@ -127,7 +127,7 @@ h2 {
   .container_text_proyectos {
     width: 90vw;
     grid-column: 6 / 12;
-    grid-row: 10 / 28;
+    grid-row: 8 / 26
   }
 
   .container_text_proyectos h2 {

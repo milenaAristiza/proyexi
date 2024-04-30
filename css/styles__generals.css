@@ -414,4 +414,8 @@ img {
     width: 4vw !important;
   }
 
+  .button_portafolio button {
+    width: 35vw !important;
+  }
+
 }

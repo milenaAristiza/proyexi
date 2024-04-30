@@ -183,6 +183,7 @@ body {
 
   .fondo_fachadas_mobile {
     background-image: url(../img/fachadas/img_principal.jpeg);
+    background-size: cover;
   }
 
   .cont1__text {
