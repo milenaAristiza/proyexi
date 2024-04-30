@@ -226,6 +226,7 @@ header {
 
 header .logo {
   height: 4vw;
+  filter: none; 
 }
 
 header .navbar ul {
@@ -311,6 +312,20 @@ header label {
 .flechaAbajo {
   width: 1vw;
 }
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  color: #ffffff;
+}
+
+img {
+  filter: brightness(0.7); 
+}
+/* .swiper-wrapper {
+  transform: translate3d(28.667px, 0px, 0px)!important;
+} */
 
 /****media query****/
 

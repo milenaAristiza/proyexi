@@ -6,7 +6,7 @@ body {
   height: 100% !important;
 }
 
-.img__portada__fachadas>img {
+.img__portada__fachadas>img, .img__portada__fachadas1>img {
   height: 80vh;
 }
 
@@ -155,11 +155,11 @@ body {
 
   .cont1__text h3,
   .cont1__text p {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 
   .title1_services {
-    font-size: 7vw;
+    font-size: 12vw;
   }
 
   .swiper-horizontal {
@@ -172,7 +172,7 @@ body {
     width: 32vw;
   }
 
-  .img__portada__fachadas {
+  .img__portada__fachadas, .img__portada__fachadas1 {
     grid-column: 1 / 13;
     grid-row: 7 / 35;
     display: flex;
@@ -188,6 +188,10 @@ body {
     background-image: url(../img/fachadas/img_principal.jpeg);
     background-size: cover;
     width: 100vw;
+  }
+
+  .img__portada__fachadas1 img {
+    height: 47vh;
   }
 
 }
