@@ -20,8 +20,26 @@ body {
 .section2 {
   background-color: rgba(0, 0, 0, 0.66);
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 11vh;
+}
+
+.section2 h2, .section2 p  {
+  margin: 0;
+  font-size: 7vh;
+}
+
+.content_proyectos_fachadas {
+  margin: 4vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .container__cont1__fachadas {
@@ -101,7 +119,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 70%;
-  height: 87vh;
+  height: auto;
 }
 
 .cont1__text {
@@ -113,6 +131,15 @@ body {
   color: #ffffff;
   height: 50%;
   gap: 4vh;
+}
+
+.cont1__text h2 {
+  position: absolute;
+  font-size: 7vh;
+}
+
+.cont1__text p {
+  font-size: 3vh;
 }
 
 .cont1__text>* {
@@ -133,6 +160,69 @@ body {
 
 .swiper {
   width: 90vw;
+}
+
+.border {
+  color: #ffffff;
+  /* text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; */
+}
+
+.wave {
+  color: #09f;
+  animation: wave 3s ease-in-out infinite;
+}
+
+.titleanimado {
+  display: flex;
+  justify-content: center;
+}
+
+.titleanimado h2{
+  /* font-size: 15vmin; */
+    position: absolute;
+}
+
+.cont_title_fachadas {
+  width: 100vw;
+  align-items: center;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(0% 60%,
+    15% 65%,
+    34% 66%,
+    51% 62%,
+    67% 50%,
+    84% 45%,
+    100% 46%,
+    100% 100%,
+    0% 100%
+    );
+  }
 }
 
 @media screen and (max-width:800px) {
@@ -191,7 +281,7 @@ body {
     width: 100%;
     grid-column: 2 / 12;
     grid-row: 17 / 33;
-    
+
   }
 
   .cont1__text h3 {
@@ -224,4 +314,12 @@ body {
     width: 80vw;
     height: auto!important;
   }
+
+  .cont1__text p {
+    font-size: 2.5vh;
+}
+
+.cont1__text h2 {
+  position: relative;
+}
 }

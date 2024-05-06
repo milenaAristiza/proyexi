@@ -154,9 +154,9 @@
         width: 25vw;
     }
 
-    .div2_section1_quienes_comos>img {
+    /* .div2_section1_quienes_comos>img {
         height: 60vw;
-    }
+    } */
 
     .section1_quienes_comos,
     .section2_quienes_comos {
@@ -171,22 +171,39 @@
         grid-template-rows: repeat(34, 1fr);
         width: 100vw;
         height: 100vh;
+        justify-content: center;
         background-color: rgba(0, 0, 0, 0.66);
     }
 
+    .mobile2 {
+        align-items: center;
+    }
     .div2_section2_quienes_comos, .container_text_button {
         font-size: 2.5vh;
         color: #ffffff;
         width: 100vw;
         height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div2_section1_quienes_comos {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/quienes_somos/img_text.jpg);
+        background-size: cover;
+    }
+
+    .margin_text {
+        width: 80vw;
     }
 
     .div2_section1_quienes_comos, .div1_section1_quienes_comos {
         width: 100vw;
-        height: 100vh;
+        grid-row: 2/20;
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .div2_section1_quienes_comos video {
@@ -198,5 +215,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .container_text_button p {
+        font-size: 2.2vh
+    }
+
+    .container_text_button h2 {
+        margin: 0;
+    }
+
+    .div1_section2_quienes_comos img {
+        height: 20vh;
     }
 }
