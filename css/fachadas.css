@@ -131,6 +131,7 @@ body {
   color: #ffffff;
   height: 50%;
   gap: 4vh;
+  text-align: justify;
 }
 
 .cont1__text h2 {
